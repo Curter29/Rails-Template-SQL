@@ -1,0 +1,9 @@
+tmp/
+public/uploads/
+uploads/
+test/
+.DS_Store
+.gitignore*
+*.log
+#*.yml
+#__*
