@@ -1,3 +1,5 @@
+== grep -lr -e '<oldword>' * | xargs sed -i 's/<oldword>/<newword>/g'
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
