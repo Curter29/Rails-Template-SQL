@@ -1,4 +1,4 @@
-Application::Application.routes.draw do
+Cx808Application::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Application::Application.load_tasks
+Cx808Application::Application.load_tasks
