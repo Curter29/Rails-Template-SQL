@@ -37,6 +37,7 @@ gem 'jquery-rails'
   gem 'slim-rails'
   gem 'squeel'
   gem 'responders'
+  #gem 'oj' #json lib
 #auth
   gem 'devise'
   #gem 'twitter_oauth'
