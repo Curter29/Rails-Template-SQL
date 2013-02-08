@@ -1,38 +1,59 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'pg'
+#gem 'mysql2'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  #gem 'sass-rails'  #,  '~> 3.2.3'
+  gem 'coffee-rails' #, '~> 3.2.1'
+  gem 'less-rails'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
+  gem 'execjs'
+  gem 'uglifier' #, '>= 1.0.3'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sprockets-dotjs', :git => 'git://github.com/jamifsud/sprockets-dotjs.git'
+  #gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
+group :development do
+  gem 'capistrano'
+  gem 'capistrano_colors'
+  gem 'rvm-capistrano'
+  gem 'letter_opener'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+#JS
 gem 'jquery-rails'
+#gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+#Ruby
+#core
+  #gem 'haml-rails'
+  gem 'slim'
+  gem 'slim-rails'
+  gem 'squeel'
+  gem 'responders'
+#auth
+  gem 'devise'
+  #gem 'twitter_oauth'
+  gem 'cancan'
+#file proccess
+  gem 'carrierwave' #upload file
+  #gem 'pdfkit' #PDF from html
+  #gem 'roo' #read & write Excel
+#localization
+  gem 'russian', '~> 0.6.0'
+#admin area
+  #gem 'rails_admin'
+#rails server
+  gem 'unicorn'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+#fixes lib
+gem 'libv8', '~> 3.11.8'
 
-# Use unicorn as the app server
-# gem 'unicorn'
 
-# Deploy with Capistrano
-# gem 'capistrano'
 
-# To use debugger
-# gem 'debugger'
