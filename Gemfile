@@ -37,7 +37,7 @@ gem 'jquery-rails'
   gem 'slim-rails'
   gem 'squeel'
   gem 'responders'
-  #gem 'oj' #json lib
+  #gem 'oj' #json lib - load model class before Oj.load() else you get nil
 #auth
   gem 'devise'
   #gem 'twitter_oauth'
