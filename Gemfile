@@ -17,13 +17,31 @@ group :assets do
   #gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
-group :development do
+group :test, :development do
+  #develop section
   gem 'capistrano'
   gem 'capistrano_colors'
   gem 'rvm-capistrano'
-  gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'letter_opener'
+
+  #test section
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+
+  gem 'ruby-prof'
+  gem 'guard' # inspect file change
+  #gem 'growl_notify' # mac osx notification
+  #gem 'growl'
+  gem 'factory_girl_rails'
+end
+
+# required test gem
+group :tools do
+  gem 'guard-test'
+  gem 'simplecov', :require => false #covergae test show GUI
 end
 
 #JS

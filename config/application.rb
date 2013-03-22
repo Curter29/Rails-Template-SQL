@@ -66,6 +66,7 @@ module Cx808Application
     config.generators do |g|
       g.template_engine :slim
       g.stylesheets false
+      g.fixture_replacement :factory_girl
     end
   end
 end
